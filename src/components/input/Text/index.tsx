@@ -24,7 +24,9 @@ const InputText = ({
   return (
     <FormControl mt={8} isRequired={isRequired}>
       <InputGroup>
-        <InputLeftElement pointerEvents="none" color="gray.300" children={icon} />
+        <InputLeftElement pointerEvents="none" color="gray.300">
+          {icon}
+        </InputLeftElement>
         <Input
           type={type}
           placeholder={placeholder}
