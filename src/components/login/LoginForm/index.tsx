@@ -1,9 +1,8 @@
 import { Box, Button } from "@chakra-ui/react";
-
 import { useForm } from "react-hook-form";
 
-import { InputEmail } from "components/input/Text/Email";
-import { InputPassword } from "components/input/Text/Password";
+import { InputEmail } from "#components/input/Text/Email";
+import { InputPassword } from "#components/input/Text/Password";
 
 const LoginForm = () => {
   const { register, handleSubmit } = useForm();

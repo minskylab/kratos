@@ -1,4 +1,4 @@
-import { Colors, TypographyProps, extendTheme, ThemeConfig } from "@chakra-ui/react";
+import { Colors, extendTheme, ThemeConfig } from "@chakra-ui/react";
 import { GlobalStyles } from "@chakra-ui/theme-tools";
 
 const config: ThemeConfig = {

@@ -1,6 +1,6 @@
 import { Flex, Box, Text, VStack, Heading, Link } from "@chakra-ui/react";
 
-import { LoginForm } from "components/login/LoginForm";
+import { LoginForm } from "#components/login/LoginForm";
 
 const LoginPage = () => {
   return (

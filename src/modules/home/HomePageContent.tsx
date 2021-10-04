@@ -1,6 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
-import { HelloWorld } from "components/ui/HelloWorld";
-import { ListUsers } from "modules/users/ListUsers";
+
+import { HelloWorld } from "#components/ui/HelloWorld";
+import { ListUsers } from "#modules/users/ListUsers";
 
 const HomePageContent = () => {
   return (

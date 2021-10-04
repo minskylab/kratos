@@ -2,9 +2,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { Provider as URQLProvider } from "urql";
 
-import { customTheme } from "theming";
-import { URQLClient } from "lib/client";
-import Fonts from "theming/fonts";
+import Fonts from "#theming/fonts";
+import { customTheme } from "#theming/index";
+import { URQLClient } from "#lib/client";
 
 const client = URQLClient();
 

@@ -1,7 +1,8 @@
 import { Box, List, ListIcon, ListItem, Skeleton, Stack, Text, useToast } from "@chakra-ui/react";
-import { useListUsersQuery } from "integration/graphql";
 import { CheckIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
+
+import { useListUsersQuery } from "#integration/graphql";
 
 type ListUsersProps = {};
 

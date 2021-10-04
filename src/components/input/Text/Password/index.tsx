@@ -1,7 +1,7 @@
-import { InputText } from "components/input/Text";
-
 import { LockIcon } from "@chakra-ui/icons";
 import { FieldValues, UseFormRegister } from "react-hook-form";
+
+import { InputText } from "#components/input/Text";
 
 interface InputPasswordProps {
   register: UseFormRegister<FieldValues>;
