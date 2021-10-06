@@ -4,19 +4,24 @@ import { Provider as URQLProvider } from "urql";
 
 import Fonts from "#theming/fonts";
 import { customTheme } from "#theming/index";
+import { AuthProvider } from "#lib/auth/AuthProvider";
 import { URQLClient } from "#lib/client";
 
 const client = URQLClient();
 
-const FairpayApp = ({ Component, pageProps }: AppProps) => {
+const REFETCH_INTERVAL_IN_MINUTES = 5;
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <URQLProvider value={client}>
-      <ChakraProvider resetCSS theme={customTheme}>
-        <Fonts />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </URQLProvider>
+    <AuthProvider refetchInterval={REFETCH_INTERVAL_IN_MINUTES * 60}>
+      <URQLProvider value={client}>
+        <ChakraProvider resetCSS theme={customTheme}>
+          <Fonts />
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </URQLProvider>
+    </AuthProvider>
   );
 };
 
-export default FairpayApp;
+export default MyApp;
